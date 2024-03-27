@@ -1,0 +1,35 @@
+/* General setting */
+:root{
+   --primary: #FF6464;
+   --secondary: #02A7CC;
+   --dark: #21243D;
+   --light: #8595A4;
+}
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: "Heebo", sans-serif;
+}
+.container{
+   width: 856px;
+   margin: 0 auto;
+}
+
+/* Header start */
+header{
+   background-color: var(--light);
+}
+header nav{
+   background-color: var(--primary);
+}
+header nav ul{
+   background-color: var(--secondary);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+/* Header end */
