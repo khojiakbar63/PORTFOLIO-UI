@@ -1,0 +1,88 @@
+:root{
+   --primary: #FF6464;
+   --secondary: #02A7CC;
+   --dark: #21243D;
+   --light: #8595A4;
+}
+#intro{
+   padding: 78px 0 27px 0;
+}
+
+#intro h1{
+   font-weight: 700;
+   font-size: 34px;
+   line-height: 50px;
+   color: var(--dark);
+   max-width: 506px;
+   margin-bottom: 30px;
+}
+#intro .sub__info{
+   display: flex;
+   align-items: center;
+   gap: 17px;
+   margin-bottom: 23px;
+}
+#intro .sub__info span {
+   padding: 5px 10px;
+   background-color: var(--primary);
+   border-radius: 16px;
+   font-weight: 900;
+   font-size: 18px;
+   color: #FFFFFF;
+}
+#intro .sub__info .sub__info__desc{
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 29px;
+   color: var(--dark);
+}
+#intro .intro__desc{
+   font-weight: 400;
+   font-size: 16px;
+   left: 23px;
+   color: #000000;
+   margin-bottom: 46px;
+   max-width: 681px;
+}
+#intro .intro__img{
+   margin-bottom: 54px;
+}
+
+#heading h1{
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 60px;
+   color: var(--dark);
+}
+#heading h2{
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 60px;
+   color: var(--dark);
+}
+#heading .heading__title{
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 23px;
+   max-width: 677px;
+   margin-bottom: 30px;
+}
+
+#heading .red__car{
+   margin-bottom: 27px;
+}
+
+@media screen and (max-width: 992px) {
+   .container{
+   padding: 0 20px;
+   }
+   .images{
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   #intro{
+      padding: 28px 0 17px 0;
+   }
+}
