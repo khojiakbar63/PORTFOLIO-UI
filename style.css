@@ -110,6 +110,7 @@ header nav ul li a:hover{
    border: var(--primary) 1px solid;
 }
 #hero .wrapper .image{
+   mix-blend-mode: multiply;
    animation-name: example;
    animation-duration: 5s;
    animation-iteration-count: infinite;
@@ -117,6 +118,7 @@ header nav ul li a:hover{
    animation-fill-mode: backwards;
    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
  }
+
 /* Hero section end */
 /* recent section start */
 #recent{
@@ -171,7 +173,7 @@ header nav ul li a:hover{
 
 /* Work section start */
 #work{
-   padding: 15px 0;
+   padding-top: 15px;
 }
 #work .work__title{
    font-weight: 400;
@@ -187,6 +189,10 @@ header nav ul li a:hover{
    padding-bottom: 15px;
    margin-bottom: 31px;
 }
+#work .box:nth-child(3){
+   margin-bottom: 0;
+}
+
 #work .box .content .content__title{
    color: var(--dark);
    font-weight: 700;
@@ -231,7 +237,7 @@ footer .socials {
    align-items: center;
    justify-content: center;
    gap: 35px;
-   margin-bottom: 26px;
+   margin: 26px 0;
 }
 footer p{
    text-align: center;
@@ -324,6 +330,82 @@ footer p{
    #recent{
       padding-bottom: 38px;
    }
+}
 
+/* DARK MODE  */
+@media screen and (prefers-color-scheme: dark) {
+   header{
+      background-color: #21243D;
+   }
+   header nav ul li a{
+      color: #fff;
+   }
+   #hero{
+      background-color: var(--dark);
+   }
+   #hero .wrapper .content h1{
+      color: #fff;
+   }
+   #hero .wrapper .content p{
+      color: #fff;
+   }
+   #recent{
+      background-color: #204a56;
+   }
+   #recent .sub__title .recent__title{
+      color: #FFFFFF;
+   }
+   #recent .sub__title .view__title a{
+      color: #FF6464;
+   }
+   #recent .wrapper .box {
+      background-color: var(--dark);
+   }
+   #recent .wrapper .box .box__title{
+      color: #fff;
+   }
+   #recent .wrapper .box .box__date{
+      color: #fff;
+   }
+   #recent .wrapper .box p{
+      color: #fff;
+   }
+
+   #work{
+      background-color: var(--dark);
+   }
+   #work .work__title{
+      color: #fff;
+   }
+   #work .box{
+      border-bottom: 1px solid #444444;
+   }
+   #work .box .content .content__title{
+      color: #fff;
+   }
+   #work .box .content .sub__info .year{
+      background: #FF6464;
+   }  
+   #work .box .content .sub__info .dash{
+      color: #fff;
+   }  
+   #work .box .content p{
+      color: #fff;
+   }
+   #work .box img{
+      border: var(--dark) 1px solid;
+      border-radius: 8px;
+   }
+
+   footer{
+      background-color: var(--dark);
+   }
+   footer .socials img{
+      background-color: #fff;
+      border-radius: 10px;
+   }
+   footer p{
+      color: #fff;
+   }
 
 }
